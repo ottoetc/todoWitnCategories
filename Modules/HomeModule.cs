@@ -46,6 +46,7 @@ namespace ToDoList
         string taskDescription = Request.Form["task-description"];
         var newTask = new Task(taskDescription);
         categoryTasks.Add(newTask);
+        // selectedCategory.AddTask(newTask);
         model.Add("tasks", categoryTasks);
         model.Add("category", selectedCategory);
         return View["category.cshtml", model];

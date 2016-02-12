@@ -29,10 +29,10 @@ namespace ToDo.Objects
     {
       return _tasks;
     }
-    public void AddTask(Task task)
-    {
-      _tasks.Add(task);
-    }
+    // public void AddTask(Task task)
+    // {
+    //   _tasks.Add(task);
+    // }
     public static List<Category> GetAll()
     {
       return _instances;
